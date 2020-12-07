@@ -22,6 +22,17 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    //GSON Converter
+    implementation("com.squareup.retrofit2:converter-gson:2.5.0")
+
+    //JPA & Postgres
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.postgresql:postgresql")
+
+
+
 }
 
 tasks.withType<KotlinCompile> {
